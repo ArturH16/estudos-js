@@ -4,18 +4,19 @@ A sequência de Fibonacci é uma série de números em que cada número é a som
 
 Seu objetivo é criar uma função chamada fibonacci, que aceite um número inteiro positivo n como argumento e retorne o n-ésimo número na sequência de Fibonacci.*/
 
-let penultimo = 0
-let valores = 1
-let ultimo = 0
-let antepenultimo = 0
-while (valores <= 5) {
-    if (valores == 1 || valores == 2) {
-        console.log(1)
+function fibonacci(n) {
+    valores = 0
+    let fibonacci = [0,1]
+while (valores <= n) {
+    if (valores == 0 || valores == 1) {
     } else {
-        penultimo = valores 
-        antepenultimo = valores --
-        ultimo = penultimo + antepenultimo
-
+        fibonacci[valores] = fibonacci[valores - 1] + fibonacci[valores - 2]
+    
     }
     valores ++
 }
+ return fibonacci[n]
+}
+
+ let posicao = fibonacci(5)
+ console.log(posicao)
