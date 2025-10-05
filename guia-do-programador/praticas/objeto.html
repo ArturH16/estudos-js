@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos JS</title>
+</head>
+<body>
+    <button onclick="executar()">Mostrar Propriedades do Carro</button>
+
+    <script>
+    let Carro  = {
+        marca: 'Lamborguini',
+        modelo: 'esportivo',
+        dimensoes: {
+            c: '4.250 mm',
+            l: '1.735 mm',
+            h: '1.525 mm'
+        }
+    }
+    marca = Carro.marca
+    modelo = Carro.modelo
+    comprimento = Carro.dimensoes.c
+
+     let executar = function() { alert(marca); alert(modelo); alert(comprimento);  a = 2; if (a > 1) {alert('DEU CERTO')}}
+    </script>
+</body>
+</html>
