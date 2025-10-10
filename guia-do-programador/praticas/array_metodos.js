@@ -34,10 +34,27 @@ let newArray = numeros.map(vezes10)
 newArray.pop()
 //console.log(newArray)
 newArray.push(60)
-console.log(newArray)
+//console.log(newArray)
 let fibonnaci = [1,1]
 function funcaoum(v1,v2) {
     return v1 + v2
 }
 let a = newArray.reduce(funcaoum,100)
-console.log(a)
+//console.log(a)
+//console.log(newArray.reverse())
+//console.log(newArray.shift())
+//console.log(newArray.slice(2,4))
+//console.log(newArray.slice(1))
+//console.log(newArray.slice(-1))
+function temString(elem) {
+    return elem =='string'
+}
+//console.log(newArray.some(temString))
+
+let arrayBaguncada = [2,-128,-32,47,34,111,-67]
+console.log(arrayBaguncada.sort())
+arrayBaguncada.splice(2,2)
+//console.log(arrayBaguncada)
+//console.log(arrayBaguncada.toLocaleString())
+arrayBaguncada.unshift(1,2,3)
+console.log(arrayBaguncada)
