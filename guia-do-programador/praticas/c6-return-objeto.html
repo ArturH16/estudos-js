@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <input type="button" value="Executar funcão" id="bot">
+
+    <script>
+        function calculaRetangulo(b,h) {
+            return { area: b * h, 
+                    perimetro: (b + h) * 2
+            }
+        }
+
+        function mostrarRet(d) {
+            alert(`Área ${d['area']}\nPerimetro ${d['perimetro']}`)
+        }
+
+        let botao = document.getElementById('bot')
+        dadosRet = calculaRetangulo(8,4)
+        botao.addEventListener('click',() => mostrarRet(dadosRet))
+
+    </script>
+    
+</body>
+</html>
