@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes com BOM</title>
+</head>
+<body>
+
+    <script>
+        alert(screen.width)
+        alert(screen.height)
+        let janelaAberta = open('','',width=400, height=200)
+        function testarJanela() {
+            if (janelaAberta.closed) {
+                alert('A janela foi fechada')
+            } else {
+                alert('A janela está aberta')
+            }
+        }
+    </script>
+    <button onclick="testarJanela()">Testar Janela</button>
+    
+</body>
+</html>
