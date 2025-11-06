@@ -1,16 +1,19 @@
-/*let temperatura = 30
-if (temperatura > 25) {
-    console.log('Está quente') }
-    else { console.log('Está frio')}*/
+class Fila {
+    constructor(array) {
+        this.array = array
+    }
 
-function Pessoa(nome,idade) {
-    this.nome = nome
-    this.idade = idade
-     apresentar() {
-        console.log(`O meu nome é ${nome} e tenho ${anos} anos`)
+    adicionarElem(novoElem) {
+        this.array.unshift(novoElem)
+    }
+
+    removerElem() {
+        this.array.pop()
     }
 }
 
-let artur = new Pessoa('artur',17)
-artur.apresentar()
-
+let fila = new Fila([1,2,3,4,5])
+fila.adicionarElem(6)
+console.log(fila)
+fila.removerElem()
+console.log(fila)
