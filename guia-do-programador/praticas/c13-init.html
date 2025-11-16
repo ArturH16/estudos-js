@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos DOM</title>
+</head>
+<body>
+
+    <h1 id="tituloPrincipal">Olá, meu fundo era branco e agora ficou vermelho!</h1>
+    <p></p>
+
+    <script>
+        window.onload = um()
+        window.onload = dois()
+        function um() {
+            let tituloPrincipal = document.getElementById('tituloPrincipal')
+            tituloPrincipal.style.backgroundColor ="red"  
+                }
+
+        function dois() {
+            let paragrafo = document.getElementsByTagName('p')[0]
+            paragrafo.innerHTML = '<strong>O GARANHÃO ITALIANO</strong>'
+        }
+    </script>
+    
+</body>
+</html>
